@@ -1,0 +1,19 @@
+package javademo;
+
+public class Constructor {
+	public Constructor() {
+		System.out.println("I am constructor");
+
+	}
+
+	public void getData() {
+		System.out.println("I am method getData");
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

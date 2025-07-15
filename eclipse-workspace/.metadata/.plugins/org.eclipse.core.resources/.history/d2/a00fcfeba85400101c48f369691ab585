@@ -1,0 +1,10 @@
+package javademo;
+
+public class FunctionOverloading {
+
+	public static void main(String[] args) {
+		// Multiple methods with same name we call it overloading
+
+	}
+
+}

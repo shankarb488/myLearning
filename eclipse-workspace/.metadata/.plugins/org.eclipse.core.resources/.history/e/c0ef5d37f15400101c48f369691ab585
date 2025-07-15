@@ -1,0 +1,14 @@
+package javademo;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] a = new int[3];
+		a[0]=1;
+		a[1]=2;
+		a[2]=3;
+	}
+
+}

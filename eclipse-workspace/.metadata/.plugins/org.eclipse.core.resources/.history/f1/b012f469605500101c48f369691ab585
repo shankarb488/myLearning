@@ -1,0 +1,12 @@
+package javademo;
+
+public class MinimumNumberFromArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[][] abc = { { 2, 4, 7 }, { 6, 3, 7 }, { 5, 9, 6 } };
+
+	}
+
+}

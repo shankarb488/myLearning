@@ -1,0 +1,26 @@
+package javademo;
+
+public class Constructor {
+	public Constructor() {
+		System.out.println("I am constructor");
+
+	}
+	
+	public Constructor(int a) {
+		System.out.println("I am parametrised constructor");
+
+	}
+
+	public void getData() {
+		System.out.println("I am method getData");
+
+	}
+
+	public static void main(String[] args) {
+	//	Constructor c = new Constructor();
+		Constructor c1 = new Constructor(2);
+	//	c.getData();
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package javademo;
+
+import java.util.Set;
+
+public class HashSet {
+
+	public static void main(String[] args) {
+		Set hs = new HashSet<>();
+		hs.add("USA");
+
+	}
+
+}

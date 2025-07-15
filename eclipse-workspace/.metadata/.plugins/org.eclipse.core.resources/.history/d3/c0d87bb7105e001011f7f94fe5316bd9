@@ -1,0 +1,30 @@
+package javademo;
+
+public class StaticKeyword {
+
+	String name;// instance variables
+	String Address;// instance variables
+	static String City = "Bengaluru";// class variables
+	//if its static then all the objects will share the variable
+
+	StaticKeyword(String name, String Address) {// local variables
+		this.name = name;// This refers to current class
+		this.Address = Address;
+
+	}
+
+	public void getAddress() {
+		System.out.println(Address + " " + City);
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StaticKeyword sk = new StaticKeyword("Bob", "Marthalli");
+		StaticKeyword sk1 = new StaticKeyword("Ram", "Jalahalli");
+		sk.getAddress();
+		sk1.getAddress();
+
+	}
+
+}

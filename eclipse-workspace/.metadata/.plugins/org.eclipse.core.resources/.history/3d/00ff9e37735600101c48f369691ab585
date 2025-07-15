@@ -1,0 +1,17 @@
+package javademo;
+
+public class Constructor {
+	public Constructor() {
+
+	}
+	
+	public void getData() {
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

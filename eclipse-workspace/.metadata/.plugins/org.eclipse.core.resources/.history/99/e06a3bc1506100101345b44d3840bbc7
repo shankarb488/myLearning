@@ -1,0 +1,25 @@
+package javademo;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+
+public class PrintingUniqNumber {
+
+	public static void main(String[] args) {
+		int[] a = { 10, 2, 2, 3, 3, 3, 4, 4, 5, 3, 4, 6, 9, 6 };
+
+		//HashSet<Integer> hs = new HashSet<Integer>();
+		LinkedHashSet<Integer> hs = new LinkedHashSet<Integer>();
+		for (int i:a) {
+			hs.add(i);
+
+		}
+		System.out.println(hs);
+		//Your current approach with HashSet is great for simply retrieving the unique values.
+
+        //Use LinkedHashSet if you want to preserve the order of first occurrence.
+		
+	}
+
+}

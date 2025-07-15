@@ -1,0 +1,15 @@
+package javademo;
+
+import java.util.HashSet;
+
+public class PrintingUniqNumber {
+
+	public static void main(String[] args) {
+		int[] a = { 10, 2, 2, 3, 3, 3, 4, 4, 5, 3, 4, 6, 9, 6 };
+		
+		HashSet<Integer> hs = new HashSet<Integer>();
+		
+
+	}
+
+}

@@ -1,0 +1,6 @@
+package javademo;
+
+public class Question2 {
+	int i =20;
+
+}

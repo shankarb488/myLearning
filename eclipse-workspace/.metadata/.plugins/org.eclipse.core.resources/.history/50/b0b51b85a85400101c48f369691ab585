@@ -1,0 +1,19 @@
+package javademo;
+
+public class ChildEmirates extends ParentAirCraftAbstract {
+
+	public static void main(String[] args) {
+		ChildEmirates ce = new ChildEmirates();
+		ce.engine();
+		ce.safetyGuideLines();
+		ce.bodyColor();
+
+	}
+
+	@Override
+	public void bodyColor() {
+		System.out.println("Red Color on the body");
+		
+	}
+
+}

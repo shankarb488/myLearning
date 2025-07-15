@@ -1,0 +1,22 @@
+package javademo;
+
+public class StaticKeyword {
+
+	String name;
+	String Address;
+	String City;//instance variables
+
+	StaticKeyword(String name, String Address, String City) {//local variables
+		this.name=name;//This refers to current class
+		this.Address=Address;
+		this.City=City;
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StaticKeyword sk = new StaticKeyword("Bob", "Marthalli", "Bengaluru");
+
+	}
+
+}

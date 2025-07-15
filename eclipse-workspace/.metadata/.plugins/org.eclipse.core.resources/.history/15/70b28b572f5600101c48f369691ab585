@@ -1,0 +1,16 @@
+package javademo;
+
+import java.text.SimpleDateFormat;
+
+public class Date {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		java.util.Date d = new java.util.Date();
+		SimpleDateFormat sdf = new SimpleDateFormat();
+		System.out.println(d.toString());
+
+	}
+
+}

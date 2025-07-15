@@ -1,0 +1,5 @@
+package javademo;
+
+public class Question2 extends Question1 {
+	int i =20;
+}

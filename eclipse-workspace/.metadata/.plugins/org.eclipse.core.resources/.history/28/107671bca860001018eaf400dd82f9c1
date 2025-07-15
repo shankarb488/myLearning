@@ -1,0 +1,20 @@
+package javademo;
+
+import java.util.ArrayList;
+
+public class PrintingUniqNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] a = { 10, 2, 2, 3, 3, 3, 4, 4, 5, 3, 4, 6, 9, 6 };
+		ArrayList<Integer> ab = new ArrayList<Integer>();
+
+		for (int i = 0; i < a.length; i++) {
+			System.out.println(a[i]);
+
+		}
+
+	}
+
+}

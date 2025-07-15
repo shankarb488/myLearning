@@ -1,0 +1,11 @@
+package javademo;
+
+public class MaxNumberFromMinRowInArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[][] abc = {{9,4,5},{4,6,3},{2,6,9}};
+
+	}
+
+}

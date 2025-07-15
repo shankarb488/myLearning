@@ -1,0 +1,11 @@
+package javademo;
+
+public class Question {
+
+	public static void main(String[] args) {
+		// interfaces will have a methods not a body
+		
+
+	}
+
+}

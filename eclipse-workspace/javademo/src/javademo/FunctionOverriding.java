@@ -1,0 +1,11 @@
+package javademo;
+
+public class FunctionOverriding {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//when in both parent and child have same method the one with child will print given we calling in child
+
+	}
+
+}

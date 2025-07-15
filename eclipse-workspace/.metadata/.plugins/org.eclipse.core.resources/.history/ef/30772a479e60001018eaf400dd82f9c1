@@ -1,0 +1,16 @@
+package javademo;
+
+import java.util.Set;
+import java.util.HashMap;
+
+public class HashSet {
+
+	public static void main(String[] args) {
+		 Set<String> hs = new HashSet<>();   // diamond operator, Java 7+
+	        hs.add("Volvo");
+	        hs.add("BMW");
+	        System.out.println(hs);
+
+	}
+
+}
