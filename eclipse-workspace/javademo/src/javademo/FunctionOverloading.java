@@ -2,7 +2,7 @@ package javademo;
 
 public class FunctionOverloading {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
 		// Multiple methods with same name we call it overloading
 		// either argument count should be different or
 		// argument data type should be different

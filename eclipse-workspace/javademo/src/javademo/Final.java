@@ -18,6 +18,10 @@ public class Final {
         a.add("mango");
         a.add("apple");
         
+        a.remove(2);
+        a.add("q");
+       
+        
         System.out.println(a);
 		
 

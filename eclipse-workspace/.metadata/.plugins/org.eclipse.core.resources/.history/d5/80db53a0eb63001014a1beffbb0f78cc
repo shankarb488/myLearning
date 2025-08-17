@@ -1,0 +1,34 @@
+package javademo;
+
+public class Demostring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s = "is Automation iss the key learn";
+		String[] splittedString = s.split(" ");
+		String maxS = splittedString[0];
+		String minS = splittedString[0];
+		for (int i = 0; i < splittedString.length; i++) {
+
+			if (splittedString[i].length() > maxS.length()) {// 10>10
+
+				maxS = splittedString[i];
+
+			}
+			if (splittedString[i].length() < minS.length()) {// 10>10
+
+				minS = splittedString[i];
+
+			}
+
+		}
+		//System.out.println("Maximum length String is "+maxS+" with length "+maxS.length());
+		//System.out.println("Minimum length String is "+minS+" with length "+minS.length());
+		for (int j=maxS.length()-1; j>=0;j--) {
+			System.out.print(maxS.charAt(j));
+		}
+
+	}
+
+}

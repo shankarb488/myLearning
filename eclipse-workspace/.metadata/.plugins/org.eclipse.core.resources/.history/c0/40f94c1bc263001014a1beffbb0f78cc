@@ -1,0 +1,13 @@
+package javademo;
+
+public class Demostring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s = "Automation";
+		System.out.println(s.chars());
+
+	}
+
+}

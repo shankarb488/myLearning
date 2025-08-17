@@ -1,0 +1,24 @@
+package javademo;
+
+public class FunctionOverloading {
+
+	public static void main(Stringdemo[] args) {
+		// Multiple methods with same name we call it overloading
+		// either argument count should be different or
+		// argument data type should be different
+
+	}
+
+	public void getData(int a) {
+
+	}
+
+	public void getData(int b, int c) {
+
+	}
+
+	public void getData(Stringdemo b, int c) {
+
+	}
+
+}

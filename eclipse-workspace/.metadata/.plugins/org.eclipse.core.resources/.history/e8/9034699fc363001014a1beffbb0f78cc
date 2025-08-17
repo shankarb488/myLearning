@@ -1,0 +1,17 @@
+package javademo;
+
+public class Demostring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s = "Automation i have to learn";
+		String[] splittedString = s.split(" ");
+
+		for (int i = 0; i < splittedString.length; i++) {
+			System.out.println(splittedString[i]);
+		}
+
+	}
+
+}

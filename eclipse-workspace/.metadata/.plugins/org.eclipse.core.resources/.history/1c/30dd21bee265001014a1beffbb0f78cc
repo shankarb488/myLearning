@@ -1,0 +1,11 @@
+package javademo;
+
+public class StringBufferBuilder {
+
+	public static void main(String[] args) {
+		String s = "is Automation iss the key learn";
+		String[] splittedString = s.split(" ");
+
+	}
+
+}

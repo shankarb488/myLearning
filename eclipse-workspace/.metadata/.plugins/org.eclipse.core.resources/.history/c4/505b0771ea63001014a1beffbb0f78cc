@@ -1,0 +1,31 @@
+package javademo;
+
+public class Demostring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s = "is Automation iss the key learn";
+		String[] splittedString = s.split(" ");
+		String maxS = splittedString[0];
+		String minS = splittedString[0];
+		for (String str:splittedString) {
+
+			if (str.length()>maxS.length()) {// 10>10
+
+				maxS = str;
+				System.out.println(maxS);
+
+			}
+			if (str.length()<minS.length()) {// 10>10
+
+				minS = str;
+				System.out.println(minS);
+
+			}
+
+		}
+
+	}
+
+}

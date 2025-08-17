@@ -1,0 +1,25 @@
+package javademo;
+
+public class Demostring {
+
+	public static void main(String[] args) {
+		String s = "is Automation iss the key learn";
+		String[] splittedString = s.split(" ");
+
+		// Initialize both to the first word
+		String maxS = splittedString[0];
+		String minS = splittedString[0];
+
+		for (String str : splittedString) {
+			if (str.length() > maxS.length()) {
+				maxS = str;
+			}
+			if (str.length() < minS.length()) {
+				minS = str;
+			}
+		}
+
+		System.out.println("Longest string: " + maxS + " (length = " + maxS.length() + ")");
+		System.out.println("Shortest string: " + minS + " (length = " + minS.length() + ")");
+	}
+}

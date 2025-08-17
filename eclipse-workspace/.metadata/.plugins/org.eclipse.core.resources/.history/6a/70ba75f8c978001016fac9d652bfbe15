@@ -1,0 +1,12 @@
+package stepDefinitions;
+
+import org.testng.annotations.BeforeTest;
+
+public class Hooks {
+	
+	@BeforeTest
+	public void beforeScenario() {
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+Feature: Validating Place APIs
+
+  Scenario Outline: Verify Add Place is being Successfully added using AddPlaceAPI
+    Given Add Place PayLoad with "<name>" "<language>" "<address>"
+    When user Calls "AddplaceAPI" with "GET" http request
+    Then the API call is success with status Code 200
+    And "status" in response body is "OK"
+    And "scope" in response body is "APP"
+    
+    
+ Examples:
+    |name    |language  |address            |
+    |AAhouse |English   |World Class Center |
+    |BBhouse |Spanish   |Nation Class Center|
+    
+   

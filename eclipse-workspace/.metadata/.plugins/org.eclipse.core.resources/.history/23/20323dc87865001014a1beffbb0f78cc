@@ -1,0 +1,20 @@
+package javademo;
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+		String name = "madam";
+		String rName = "";
+
+		for (int i = name.length() - 1; i >= 0; i--) {
+			rName = name+name.charAt(i);
+
+		}
+		if(rName==name) {
+			System.out.println(name+" is a Palindrome");
+		}
+		else() {
+			System.out.println(name+" is not a Palindrome");
+		}
+	}
+}

@@ -1,0 +1,71 @@
+package stepDefinitions;
+
+import static io.restassured.RestAssured.given;
+import static org.testng.Assert.assertEquals;
+
+import java.io.IOException;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import resources.APIResources;
+import resources.TestDataBuild;
+import resources.Utils;
+
+public class StepDefinitions extends Utils {
+	RequestSpecification addPlaceRequestSpec;
+	Response response;
+	TestDataBuild data = new TestDataBuild();
+
+	@Given("Add Place PayLoad with {string} {string} {string}")
+
+	public void add_place_pay_load_with(String name, String language, String address) throws IOException {
+		addPlaceRequestSpec = given().spec(requestSpecification()).body(data.addPlacePayLoad(name, language, address));
+
+	}
+
+	@When("user Calls {string} with {string} http request")
+	public void user_calls_with_http_request(String resource, String method) {
+		APIResources resourcesAPI = APIResources.valueOf(resource);
+
+		if (method.equalsIgnoreCase("POST"))
+			response = addPlaceRequestSpec.when().post(resourcesAPI.getResource()).then().spec(responsetSpecification())
+					.extract().response();
+		else if (method.equalsIgnoreCase("GET"))
+			response = addPlaceRequestSpec.when().get(resourcesAPI.getResource()).then().spec(responsetSpecification())
+					.extract().response();
+	}
+
+	@Then("the API call is success with status Code {int}")
+	public void the_api_call_is_success_with_status_code(Integer int1) {
+		assertEquals(response.getStatusCode(), 200);
+	}
+
+	@Then("{string} in response body is {string}")
+	public void in_response_body_is(String keyValue, String expectedValue) {
+		// String actualValue = getJsonPath(response, keyValue);
+		// System.out.println(actualValue);
+		assertEquals(getJsonPath(response, keyValue), expectedValue);
+
+	}
+
+	@Then("Verify place_ID created maps to {string} using {string}")
+	public void verify_place_ID_created_maps_to_using(String name, String resource) throws IOException {
+		String place_id = getJsonPath(response, "place_id");
+		addPlaceRequestSpec = given().spec(requestSpecification()).queryParam("place_id", place_id);
+		user_calls_with_http_request(resource, "GET");
+		String actualName = getJsonPath(response, "name");
+		System.out.println(actualName);
+		assertEquals(actualName, name);
+
+	}
+
+	@Then("Delete place_ID created maps to using {string}")
+	public void Delete_place_ID_created_maps_to_using() {
+
+	}
+
+
+}

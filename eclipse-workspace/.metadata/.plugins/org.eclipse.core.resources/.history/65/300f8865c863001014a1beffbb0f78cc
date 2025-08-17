@@ -1,0 +1,25 @@
+package javademo;
+
+public class Demostring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s = "Automation is the key learn";
+		String[] splittedString = s.split(" ");
+		String s1 = splittedString[0];
+
+		System.out.println(s1.length());
+
+		for (int i = 0; i < splittedString.length; i++) {
+
+			if (splittedString[i].length()>splittedString[1].length()) {
+
+			}
+
+			System.out.println(splittedString[i]);
+		}
+
+	}
+
+}

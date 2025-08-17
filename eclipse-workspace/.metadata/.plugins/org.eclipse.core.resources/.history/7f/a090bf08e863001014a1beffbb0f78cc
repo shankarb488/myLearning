@@ -1,0 +1,24 @@
+package javademo;
+
+public class Demostring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s = "Automation is the key learn";
+		String[] splittedString = s.split(" ");
+		String maxS = splittedString[0];//10
+		for (int i = 0; i < splittedString.length; i++) {
+
+			if (splittedString[i].length()>=maxS.length()) {// 10>10
+
+				maxS = splittedString[i];
+				System.out.println(maxS);
+
+			}
+
+		}
+
+	}
+
+}

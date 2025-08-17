@@ -1,0 +1,10 @@
+io.cucumber.junit.UndefinedStepException: The step 'user Calls "AddplaceAPI" with "Post" http request' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("user Calls {string} with {string} http request")
+public void user_calls_with_http_request(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

@@ -1,0 +1,36 @@
+package javademo;
+
+public class StringBufferBuilder {
+
+	public static void main(String[] args) {
+		String s = "is Automation iss the key learn";
+		String[] splittedString = s.split(" ");
+		String maxS = splittedString[0];
+		String minS = splittedString[0];
+		String reversedmaxS = "";
+		String reversedminS = "";
+		for (int i = 0; i < splittedString.length; i++) {
+			if (splittedString[i].length() > maxS.length()) {// 10>10
+				maxS = splittedString[i];
+			}
+			if (splittedString[i].length() < minS.length()) {// 10>10
+				minS = splittedString[i];
+			}
+		}
+		//System.out.println("Maximum length String is " + maxS + " with length " + maxS.length());
+		//System.out.println("Minimum length String is " + minS + " with length " + minS.length());
+		
+		StringBuilder sb = new StringBuilder(maxS);
+		//System.out.println(sb.reverse());
+		String reversedMax= sb.reverse().toString();
+		
+		StringBuilder sb1 = new StringBuilder(minS);
+		//System.out.println(sb1.reverse());
+		String reversedMin= sb.reverse().toString();
+		
+		String result = s.replace(maxS, reversedMax)
+                .replace(minS, reversedMin);
+		
+		System.out.println(result);
+	}
+}

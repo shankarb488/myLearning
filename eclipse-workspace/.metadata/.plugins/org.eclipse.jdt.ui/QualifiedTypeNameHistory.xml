@@ -8,4 +8,15 @@
     <fullyQualifiedTypeName name="com.aventstack.extentreports.Status"/>
     <fullyQualifiedTypeName name="shankar.TestComponents.Retry"/>
     <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="org.hamcrest.Matchers"/>
+    <fullyQualifiedTypeName name="org.testng.Assert"/>
+    <fullyQualifiedTypeName name="files.payLoad"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="pojo.Location"/>
+    <fullyQualifiedTypeName name="io.restassured.RestAssured"/>
+    <fullyQualifiedTypeName name="io.restassured.http.ContentType"/>
+    <fullyQualifiedTypeName name="pojo.LoginResponse"/>
+    <fullyQualifiedTypeName name="io.restassured.filter.log.RequestLoggingFilter"/>
+    <fullyQualifiedTypeName name="io.restassured.filter.log.ResponseLoggingFilter"/>
 </qualifiedTypeNameHistroy>

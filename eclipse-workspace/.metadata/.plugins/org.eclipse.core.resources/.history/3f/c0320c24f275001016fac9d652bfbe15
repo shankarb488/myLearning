@@ -1,0 +1,8 @@
+Feature: Validating Place APIs
+
+  Scenario: Verify Add Place is being Successfully added using AddPlaceAPI
+    Given Add Place PayLoad
+    When user Calls "AddplaceAPI" with Post http request
+    Then the API call is success with status Code 200
+    And "status" in response body is "OKK"
+    And "scope" in response body is "APP"

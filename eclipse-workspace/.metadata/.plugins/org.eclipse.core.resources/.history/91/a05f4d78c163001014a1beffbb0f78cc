@@ -1,0 +1,48 @@
+package javademo;
+
+public class AustralianTraffic implements CentralTraffic, ContinentalTraffic {// more than one interfaces can be
+																				// implement
+
+	public static void main(Stringdemo[] args) {
+		CentralTraffic ac = new AustralianTraffic();// implement the methods present in central traffic
+		ac.flashYellow();
+		ac.greenGo();
+		ac.redStop();
+		AustralianTraffic at = new AustralianTraffic();
+		at.walkSymbol();
+		ContinentalTraffic ct = new AustralianTraffic();
+		ct.trainSymbol();
+
+	}
+
+	@Override
+	public void redStop() {
+		System.out.println("redStop implementation");
+
+	}
+
+	public void walkSymbol() {
+		System.out.println("WalkSymbol implementation");
+
+	}
+
+	@Override
+	public void greenGo() {
+		System.out.println("greenGo implementation");
+
+	}
+
+	@Override
+	public void flashYellow() {
+		System.out.println("flashYellow implementation");
+
+	}
+
+	@Override
+	public void trainSymbol() {
+		System.out.println("trainSymbol implementation");
+		System.out.println(i);
+
+	}
+
+}
